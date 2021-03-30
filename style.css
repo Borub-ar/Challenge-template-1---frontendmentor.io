@@ -1,5 +1,6 @@
 :root {
-    --chat-color: 
+    --bg-color1: #e942ff;
+    --bg-color2: #8838ff;
 }
 
 *, *::after, *::before {
@@ -12,6 +13,8 @@ body {
     line-height: 1.7;
     font-family: 'Rubik', sans-serif;
 }
+
+/* ///////////////////////////////// PARAGRAPHS /////////////// */
 
 p {
     margin: 0;
@@ -52,7 +55,7 @@ p {
     right: 1rem;
 }
 
-/* ///////////////////////////////////////////////// */
+/* ///////////////////////// "BODY" //////////////////////// */
 
 
 .wrapper {
@@ -64,7 +67,7 @@ p {
 
 .left-bg-item, .right-bg-item {
     position: fixed;
-    background: linear-gradient(#e942ff, #8838ff);
+    background: linear-gradient(var(--bg-color1), var(--bg-color2));
     width: 38vw;
     height: 90vh;
     min-width: 400px;
@@ -139,7 +142,7 @@ header {
 
 .top-part {
     height: 18%;
-    background: linear-gradient(90deg, rgba(136,56,255,1) 0%, rgba(233,66,255,1) 100%); 
+    background: linear-gradient(90deg, var(--bg-color2) 0%, var(--bg-color1) 100%); 
     border-radius: 1.5rem 1.5rem .5rem .5rem;
     display: flex;
     align-items: flex-end;
@@ -208,7 +211,7 @@ header {
 
 .gradient-price {
     position: relative;
-    background: linear-gradient(90deg, rgba(233,66,255,1) 0%, rgba(136,56,255,1) 100%);
+    background: linear-gradient(90deg, var(--bg-color1) 0%, var(--bg-color2) 100%);
     display: flex;
     align-items: center;
     padding: .8rem;
@@ -242,6 +245,22 @@ input {
     color: rgb(197, 197, 197);
 }
 
+::-webkit-input-placeholder{
+    color: rgb(197, 197, 197);
+}
+
+::-moz-placeholder{
+    color: rgb(197, 197, 197);
+}
+
+:-ms-input-placeholder{
+    color: rgb(197, 197, 197);
+}
+
+::-ms-input-placeholder{
+    color: rgb(197, 197, 197);
+}
+
 ::placeholder{
     color: rgb(197, 197, 197);
 }
@@ -267,6 +286,8 @@ input:focus {
 label {
     display: none;
 }
+
+/* /////////////////////////////////// MEDIA QUERIES ////////////////// */
 
 
 @media (max-width:800px) {
