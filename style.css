@@ -264,6 +264,9 @@ input:focus {
     border-radius: 50%;
 }
 
+label {
+    display: none;
+}
 
 
 @media (max-width:800px) {
